@@ -10,7 +10,7 @@ public class Starter extends Application {
 
     @Override
     public void start(Stage stage) throws Exception {
-        stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/view/Login_Apex.fxml"))));
-        stage.show();
+       stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/view/Login_Apex.fxml"))));
+       stage.show();
     }
 }
