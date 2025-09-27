@@ -10,6 +10,8 @@ public class LogIn_Controller {
 
     public void btnLoginOnAction(ActionEvent actionEvent) {
         System.out.println("Username : "+txtUsername.getText()+"\nPassword : "+txtPassword.getText());
+        txtUsername.setText("");
+        txtPassword.setText("");
     }
 
     public void btnCancelOnAction(ActionEvent actionEvent) {
