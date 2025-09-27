@@ -30,8 +30,6 @@
         <li>Real-time insights dashboard</li>
         <li>Scalable architecture for enterprise use</li>
     </ul>
-    <h2>📄 Author</h2>
-    <p>Created by <strong>rishinduyohan</strong> – AI Developer & UI Designer</p>
     <h2>🌟 Future Enhancements</h2>
     <ul>
         <li>Multi-user role support</li>
@@ -39,6 +37,7 @@
         <li>Integration with cloud-based AI services</li>
         <li>Dark mode UI option</li>
     </ul>
-
+    <h2>📄 Author</h2>
+    <p>Created by <strong>rishinduyohan</strong> – AI Developer & UI Designer</p>
 </body>
 </html>
