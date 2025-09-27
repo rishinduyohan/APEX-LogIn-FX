@@ -8,8 +8,10 @@
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.Region?>
 <?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
 
 <AnchorPane prefHeight="382.0" prefWidth="695.0" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LogIn_Controller">
    <children>
@@ -19,30 +21,52 @@
          </image>
       </ImageView>
       <Region layoutX="362.0" layoutY="17.0" prefHeight="354.0" prefWidth="299.0" style="-fx-background-radius: 50; -fx-border-radius: 50;" />
-      <Label layoutX="39.0" layoutY="28.0" prefHeight="30.0" prefWidth="65.0" style="text-color: green;" text="Apex " textAlignment="CENTER">
+      <Pane layoutX="365.0" layoutY="37.0" prefHeight="330.0" prefWidth="299.0" style="-fx-background-color: rgba(0, 0, 0, 0.5); -fx-background-radius: 30;">
+         <children>
+            <Button layoutX="41.0" layoutY="262.0" mnemonicParsing="false" onAction="#btnLoginOnAction" prefHeight="36.0" prefWidth="102.0" style="-fx-background-radius: 30; -fx-background-color: blue;" text="LOG IN" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button layoutX="156.0" layoutY="262.0" mnemonicParsing="false" onAction="#btnCancelOnAction" prefHeight="36.0" prefWidth="102.0" style="-fx-background-radius: 30; -fx-background-color: red;" text="CANCEL" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <PasswordField fx:id="txtPassword" layoutX="40.0" layoutY="186.0" prefHeight="26.0" prefWidth="219.0" style="-fx-background-radius: 50;" />
+            <Hyperlink layoutX="156.0" layoutY="219.0" text="Forgot Password?" textFill="#abcfff" />
+            <Label layoutX="42.0" layoutY="163.0" text="Password :" textFill="WHITE">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="102.0" layoutY="23.0" prefHeight="43.0" prefWidth="95.0" text="LOG IN" textFill="WHITE">
+               <font>
+                  <Font name="Candara Bold" size="31.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <TextField fx:id="txtUsername" layoutX="402.0" layoutY="154.0" prefHeight="26.0" prefWidth="219.0" style="-fx-background-radius: 50;" />
+      <Label layoutX="402.0" layoutY="129.0" text="Username / Email :" textFill="WHITE">
          <font>
-            <Font name="Bell MT" size="25.0" />
-         </font>
-      </Label>
-      <TextField layoutX="402.0" layoutY="154.0" prefHeight="26.0" prefWidth="219.0" style="-fx-background-radius: 50;" />
-      <PasswordField layoutX="402.0" layoutY="218.0" prefHeight="26.0" prefWidth="219.0" style="-fx-background-radius: 50;" />
-      <Label layoutX="402.0" layoutY="129.0" text="Username / Email :" />
-      <Label layoutX="402.0" layoutY="193.0" text="Password :" />
-      <Hyperlink layoutX="518.0" layoutY="251.0" text="Forgot Password?" />
-      <Button layoutX="402.0" layoutY="286.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="102.0" style="-fx-background-radius: 50;" text="LOG IN">
+            <Font size="13.0" />
+         </font></Label>
+      <Pane layoutX="22.0" layoutY="115.0" prefHeight="216.0" prefWidth="299.0" style="-fx-background-color: rgba(0, 0, 0, 0.5); -fx-background-radius: 30;" />
+      <ImageView fitHeight="65.0" fitWidth="56.0" layoutX="36.0" layoutY="29.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/Gemini_Generated_Image_f6fw6hf6fw6hf6fw.jpg" />
+         </image>
+      </ImageView>
+      <Text fill="WHITE" layoutX="36.0" layoutY="161.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome to Apex AI" wrappingWidth="252.53668212890625">
          <font>
-            <Font name="System Bold" size="12.0" />
+            <Font name="System Bold" size="21.0" />
          </font>
-      </Button>
-      <Button layoutX="517.0" layoutY="286.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="102.0" style="-fx-background-radius: 50;" text="CANCEL">
+      </Text>
+      <Text fill="WHITE" layoutX="36.0" layoutY="193.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Log in to access the full power of Apex AI where cutting-edge algorithms meet intuitive design. Whether you're building smarter workflows, analyzing data at scale, or deploying AI-driven solutions, Apex gives you the tools to lead with confidence." wrappingWidth="286.13671875">
          <font>
-            <Font name="System Bold" size="12.0" />
+            <Font size="13.0" />
          </font>
-      </Button>
-      <Label layoutX="478.0" layoutY="66.0" text="LOG IN">
-         <font>
-            <Font name="System Bold" size="20.0" />
-         </font>
-      </Label>
+      </Text>
    </children>
 </AnchorPane>
